@@ -1,0 +1,36 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches and log files
+*.cache/
+*.log
+
+# Environment variables
+.env
+
+# Editor/IDE specific files
+.idea/
+.vscode/
+
+# System and temporary files
+Thumbs.db
+Desktop.ini
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+
+# Python virtual environment
+venv/
+venv3/
+*.venv/
+*.venv3/
+pyvenv.cfg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
