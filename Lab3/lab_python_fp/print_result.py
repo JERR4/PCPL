@@ -1,8 +1,8 @@
 import inspect
 def print_result(func):
-    def wrapper():
+    def wrapper(*args):
         print("Имя функции:", func.__name__)
-        result = func()
+        result = func(*args)
         if isinstance(result, list) or inspect.isgenerator(result):
             for el in result:
                 print(el)

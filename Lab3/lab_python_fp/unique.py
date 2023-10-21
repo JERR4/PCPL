@@ -24,28 +24,28 @@ class Unique(object):
 
     def __iter__(self):
         return self
+if __name__ == '__main__':
+    data1 = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2]
+    unique_data1 = Unique(data1)
+    for item in unique_data1:
+        print(item)
 
-data1 = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2]
-unique_data1 = Unique(data1)
-for item in unique_data1:
-    print(item)
+    print('\n')
+    data2 = []
+    for num in gen_random(5, 1, 3):
+        data2.append(num)
+    unique_data2 = Unique(data2)
+    for item in unique_data2:
+        print(item)
 
-print('\n')
-data2 = []
-for num in gen_random(5, 1, 3):
-    data2.append(num)
-unique_data2 = Unique(data2)
-for item in unique_data2:
-    print(item)
+    print('\n')
+    data3 = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
+    unique_data3 = Unique(data3, ignore_case=True)
+    for item in unique_data3:
+        print(item)
 
-print('\n')
-data3 = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
-unique_data3 = Unique(data3, ignore_case=True)
-for item in unique_data3:
-    print(item)
-
-print('\n')
-data4 = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
-unique_data4 = Unique(data3)
-for item in unique_data4:
-    print(item)
+    print('\n')
+    data4 = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
+    unique_data4 = Unique(data3)
+    for item in unique_data4:
+        print(item)

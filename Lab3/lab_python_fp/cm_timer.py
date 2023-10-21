@@ -1,6 +1,7 @@
 import time
 from contextlib import contextmanager
 
+
 class cm_timer_1:
     def __enter__(self):
         self.start_time = time.time()
@@ -24,4 +25,3 @@ if __name__ == '__main__':
         time.sleep(5.5)
     with cm_timer_2():
         time.sleep(5.5)
-

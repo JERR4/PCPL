@@ -4,8 +4,9 @@ def field(items, *args):
     c_a = len(args)
     for i in range(c_i):
         for j in range(c_a):
-            if args[j] is not None:
+            if args[j] in items[i] and args[j] is not None:
                 yield items[i][args[j]]
+
 
 if __name__ == '__main__':
     goods = [
